@@ -12,4 +12,4 @@ Keep in mind : Everything is a test, the way you code, the way you send your sou
  - Edit the landing page to print a map centered on the user's location. Use leaflet to do it for free
  - Create a new page
  - Make the new page accessible from the landing page through a link
- - This new page prints a list of elements you get from the test-server project. Use the endpoint returning objects around given coordinates.
+ - This new page prints a list of elements you get from the test-server project. Use the endpoint returning objects around given coordinates. A simple list, do not use a map to render objects.
