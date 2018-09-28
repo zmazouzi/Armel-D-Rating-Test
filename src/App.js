@@ -5,18 +5,15 @@ import map from './Map';
 
 
 class App extends Component {
+  
+  state = { landingPageOpen: true }
+  
   render() {
+    const {landingPageOpen} = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-              <div id='map-container'> <map></map> </div>
-
+       <button onClick={ () => {this.setState({ landingPageOpen: !landingPageOpen })}}> go to listing page</button>
+            { landingPageOpen? <div id='map-container'> <map></map> </div> : <div> other component here </div>}
       </div>
     );
   }
